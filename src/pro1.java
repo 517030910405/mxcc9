@@ -712,7 +712,7 @@ public class pro1 {
 
             //To be done
         }
-        if (now.type.equals("variable")){
+        if (now.type.equals("variable")||now.type.equals("input_variable")){
             if (scope_info.get(scope_info.size()-1).scope.get(now.son.get(1).name).type.equals("void")){
                 throw new Exception("void variable Error");
             }
